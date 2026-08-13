@@ -1,0 +1,18 @@
+% ==========================================================
+%  Copy & Paste the following LaTeX code into your paper!   
+% ==========================================================
+\begin{table}[t]
+  \centering
+  \caption{Performance comparison on MME and MMBench benchmarks. The best results are highlighted in \textbf{bold}.}
+  \label{tab:main_results}
+  \begin{tabular}{lccccc}
+    \toprule
+    \textbf{Method} & \textbf{Iso.} & $\lambda_{ortho}$ & \textbf{MME (P)} & \textbf{MME (C)} & \textbf{MMBench} \\
+    \midrule
+    LLaVA-1.5-7B (Standard) & No & 0.00 & 1210.0 & 380.0 & 64.3 \\
+    MoE Baseline (Soft Route) & No & 0.00 & 1235.0 & 405.0 & 67.1 \\
+    OrthoEvo-MoE (w/o Ortho) & Yes & 0.00 & 1255.0 & 420.0 & 69.8 \\
+    \textbf{OrthoEvo-MoE (Ours Full)} & Yes & 0.05 & \textbf{1285.5} & \textbf{445.0} & \textbf{72.4} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
