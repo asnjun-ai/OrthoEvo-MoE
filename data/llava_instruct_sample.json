@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sample_001",
+    "image": "",
+    "conversations": [
+      {"from": "human", "value": "What is the key benefit of OrthoEvo-MoE?"},
+      {"from": "gpt", "value": "It mitigates expert uniformity and router rigidity in MLLMs."}
+    ]
+  },
+  {
+    "id": "sample_002",
+    "image": "",
+    "conversations": [
+      {"from": "human", "value": "Explain orthogonal penalty in MoE."},
+      {"from": "gpt", "value": "Orthogonal penalty ensures functional divergence among expert weight matrices."}
+    ]
+  }
+]
