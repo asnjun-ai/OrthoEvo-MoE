@@ -75,7 +75,7 @@ Expected terminal log:
 
 ---
 
-## 4. Running the 5 Paper Experiments
+## 4. Running the Experiments
 
 ### Experiment 1: Direct Falsifiability Test (EvoMoE vs. OrthoEvo-MoE)
 Validates that adding orthogonal regularization does not collapse router entropy while boosting downstream accuracy.
