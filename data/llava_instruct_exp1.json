@@ -1,0 +1,562 @@
+[
+  {
+    "id": "01",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat color is dominant in this dark scene?"
+      },
+      {
+        "from": "gpt",
+        "value": "The scene is predominantly black and dark."
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there bright visual elements present?"
+      },
+      {
+        "from": "gpt",
+        "value": "No bright visual elements are present."
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDescribe the lighting level."
+      },
+      {
+        "from": "gpt",
+        "value": "The lighting level is zero, representing an unlit background."
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIdentify the geometry of the canvas."
+      },
+      {
+        "from": "gpt",
+        "value": "The geometry consists of a square canvas format."
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs any object visible?"
+      },
+      {
+        "from": "gpt",
+        "value": "No object is visible in the frame."
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the primary benefit of OrthoEvo-MoE?"
+      },
+      {
+        "from": "gpt",
+        "value": "OrthoEvo-MoE mitigates expert uniformity and router rigidity via orthogonal regularisation."
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow does orthogonal loss constrain expert weights?"
+      },
+      {
+        "from": "gpt",
+        "value": "The orthogonal loss minimizes pairwise cosine similarity across expert parameter matrices to enforce functional divergence."
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhy use explicit modality partitioning in routing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Explicit modality partitioning prevents visual and textual representation blending, preserving modality purity."
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat role does momentum beta play in expert evolution?"
+      },
+      {
+        "from": "gpt",
+        "value": "Momentum beta retains prior foundational knowledge during progressive expert evolution."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain routing entropy in mixture of experts."
+      },
+      {
+        "from": "gpt",
+        "value": "Routing entropy quantifies the dispersion of token assignment probabilities across experts."
+      }
+    ]
+  },
+  {
+    "id": "01",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat color is dominant in this dark scene?"
+      },
+      {
+        "from": "gpt",
+        "value": "The scene is predominantly black and dark."
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there bright visual elements present?"
+      },
+      {
+        "from": "gpt",
+        "value": "No bright visual elements are present."
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDescribe the lighting level."
+      },
+      {
+        "from": "gpt",
+        "value": "The lighting level is zero, representing an unlit background."
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIdentify the geometry of the canvas."
+      },
+      {
+        "from": "gpt",
+        "value": "The geometry consists of a square canvas format."
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs any object visible?"
+      },
+      {
+        "from": "gpt",
+        "value": "No object is visible in the frame."
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the primary benefit of OrthoEvo-MoE?"
+      },
+      {
+        "from": "gpt",
+        "value": "OrthoEvo-MoE mitigates expert uniformity and router rigidity via orthogonal regularisation."
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow does orthogonal loss constrain expert weights?"
+      },
+      {
+        "from": "gpt",
+        "value": "The orthogonal loss minimizes pairwise cosine similarity across expert parameter matrices to enforce functional divergence."
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhy use explicit modality partitioning in routing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Explicit modality partitioning prevents visual and textual representation blending, preserving modality purity."
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat role does momentum beta play in expert evolution?"
+      },
+      {
+        "from": "gpt",
+        "value": "Momentum beta retains prior foundational knowledge during progressive expert evolution."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain routing entropy in mixture of experts."
+      },
+      {
+        "from": "gpt",
+        "value": "Routing entropy quantifies the dispersion of token assignment probabilities across experts."
+      }
+    ]
+  },
+  {
+    "id": "01",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat color is dominant in this dark scene?"
+      },
+      {
+        "from": "gpt",
+        "value": "The scene is predominantly black and dark."
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there bright visual elements present?"
+      },
+      {
+        "from": "gpt",
+        "value": "No bright visual elements are present."
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDescribe the lighting level."
+      },
+      {
+        "from": "gpt",
+        "value": "The lighting level is zero, representing an unlit background."
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIdentify the geometry of the canvas."
+      },
+      {
+        "from": "gpt",
+        "value": "The geometry consists of a square canvas format."
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs any object visible?"
+      },
+      {
+        "from": "gpt",
+        "value": "No object is visible in the frame."
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the primary benefit of OrthoEvo-MoE?"
+      },
+      {
+        "from": "gpt",
+        "value": "OrthoEvo-MoE mitigates expert uniformity and router rigidity via orthogonal regularisation."
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow does orthogonal loss constrain expert weights?"
+      },
+      {
+        "from": "gpt",
+        "value": "The orthogonal loss minimizes pairwise cosine similarity across expert parameter matrices to enforce functional divergence."
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhy use explicit modality partitioning in routing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Explicit modality partitioning prevents visual and textual representation blending, preserving modality purity."
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat role does momentum beta play in expert evolution?"
+      },
+      {
+        "from": "gpt",
+        "value": "Momentum beta retains prior foundational knowledge during progressive expert evolution."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain routing entropy in mixture of experts."
+      },
+      {
+        "from": "gpt",
+        "value": "Routing entropy quantifies the dispersion of token assignment probabilities across experts."
+      }
+    ]
+  },
+  {
+    "id": "01",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat color is dominant in this dark scene?"
+      },
+      {
+        "from": "gpt",
+        "value": "The scene is predominantly black and dark."
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nAre there bright visual elements present?"
+      },
+      {
+        "from": "gpt",
+        "value": "No bright visual elements are present."
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDescribe the lighting level."
+      },
+      {
+        "from": "gpt",
+        "value": "The lighting level is zero, representing an unlit background."
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIdentify the geometry of the canvas."
+      },
+      {
+        "from": "gpt",
+        "value": "The geometry consists of a square canvas format."
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs any object visible?"
+      },
+      {
+        "from": "gpt",
+        "value": "No object is visible in the frame."
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the primary benefit of OrthoEvo-MoE?"
+      },
+      {
+        "from": "gpt",
+        "value": "OrthoEvo-MoE mitigates expert uniformity and router rigidity via orthogonal regularisation."
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nHow does orthogonal loss constrain expert weights?"
+      },
+      {
+        "from": "gpt",
+        "value": "The orthogonal loss minimizes pairwise cosine similarity across expert parameter matrices to enforce functional divergence."
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhy use explicit modality partitioning in routing?"
+      },
+      {
+        "from": "gpt",
+        "value": "Explicit modality partitioning prevents visual and textual representation blending, preserving modality purity."
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat role does momentum beta play in expert evolution?"
+      },
+      {
+        "from": "gpt",
+        "value": "Momentum beta retains prior foundational knowledge during progressive expert evolution."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "image": "",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nExplain routing entropy in mixture of experts."
+      },
+      {
+        "from": "gpt",
+        "value": "Routing entropy quantifies the dispersion of token assignment probabilities across experts."
+      }
+    ]
+  }
+]
