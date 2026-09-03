@@ -82,10 +82,22 @@ Validates that adding orthogonal regularization does not collapse router entropy
 
 ```bash
 # 1. Train EvoMoE Baseline (λ = 0.00)
-python train_sft_real.py --lambda_ortho 0.00 --output_dir ./checkpoints/exp1_evomoe_baseline
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.00 \
+    --output_dir ./checkpoints/exp1_evomoe_baseline_4l \
+    --epochs 5 \
+    --batch_size 1 \
+    --grad_accum_steps 8
 
 # 2. Train OrthoEvo-MoE (λ = 0.05)
-python train_sft_real.py --lambda_ortho 0.05 --output_dir ./checkpoints/exp1_ortho_evomoe
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.05 \
+    --output_dir ./checkpoints/exp1_ortho_evomoe_4l \
+    --epochs 5 \
+    --batch_size 1 \
+    --grad_accum_steps 8
 
 # 3. Evaluate MME & MMBench
 python eval_benchmarks.py --checkpoint ./checkpoints/exp1_evomoe_baseline --benchmark mme mmbench
