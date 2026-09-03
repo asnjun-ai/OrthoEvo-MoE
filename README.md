@@ -100,8 +100,8 @@ python train_sft_real.py \
     --grad_accum_steps 8
 
 # 3. Evaluate MME & MMBench
-python eval_benchmarks.py --checkpoint ./checkpoints/exp1_evomoe_baseline --benchmark mme mmbench
-python eval_benchmarks.py --checkpoint ./checkpoints/exp1_ortho_evomoe --benchmark mme mmbench
+python eval_benchmarks.py --checkpoint ./checkpoints/exp1_evomoe_baseline_4l/epoch_5
+python eval_benchmarks.py --checkpoint ./checkpoints/exp1_ortho_evomoe_4l/epoch_5
 ```
 
 ### Experiment 2: Dual-Backbone Scaling (Qwen-1.8B vs. Phi-2.7B)
