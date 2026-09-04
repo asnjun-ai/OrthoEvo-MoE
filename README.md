@@ -108,13 +108,27 @@ python eval_benchmarks.py --checkpoint ./checkpoints/exp1_ortho_evomoe_4l/epoch_
 Evaluates architectural generalizability across different foundation models on VQAv2 and GQA.
 
 ```bash
-# Qwen-1.8B Backbone
-python train_sft_real.py --model_id "Qwen/Qwen-1.8B" --output_dir ./checkpoints/exp2_qwen1.8b
-python eval_benchmarks.py --checkpoint ./checkpoints/exp2_qwen1.8b --benchmark vqav2 gqa
+# 1. Qwen1.5-1.8B 训练与评测
+python train_exp2_scaling.py \
+    --model_id "Qwen/Qwen1.5-1.8B" \
+    --output_dir ./checkpoints/exp2_qwen1.8b \
+    --lambda_ortho 0.05 \
+    --epochs 3
 
-# Phi-2.7B Backbone
-python train_sft_real.py --model_id "microsoft/phi-2" --output_dir ./checkpoints/exp2_phi2.7b
-python eval_benchmarks.py --checkpoint ./checkpoints/exp2_phi2.7b --benchmark vqav2 gqa
+python eval_exp2_scaling.py \
+    --model_id "Qwen/Qwen1.5-1.8B" \
+    --checkpoint ./checkpoints/exp2_qwen1.8b/final
+
+# 2. Phi-2.7B 训练与评测
+python train_exp2_scaling.py \
+    --model_id "microsoft/phi-2" \
+    --output_dir ./checkpoints/exp2_phi2.7b \
+    --lambda_ortho 0.05 \
+    --epochs 3
+
+python eval_exp2_scaling.py \
+    --model_id "microsoft/phi-2" \
+    --checkpoint ./checkpoints/exp2_phi2.7b/final
 ```
 
 ### Experiment 3: Parameter Sensitivity Analysis of $\lambda$
