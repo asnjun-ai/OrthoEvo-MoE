@@ -146,13 +146,40 @@ Compares Shared Linear, Dynamic Token-aware Router (DTR), and Explicit Modality-
 
 ```bash
 # Shared Linear Router (MoE-LLaVA)
-python train_sft_real.py --router_type shared_linear --output_dir ./checkpoints/exp4_shared_linear
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.05 \
+    --router_type shared_linear \
+    --output_dir ./checkpoints/exp4_shared_linear \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+python eval_benchmarks.py --checkpoint ./checkpoints/exp4_shared_linear/epoch_3
 
 # Dynamic Token-Aware Router (EvoMoE)
-python train_sft_real.py --router_type dtr --output_dir ./checkpoints/exp4_dtr
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.05 \
+    --router_type dtr \
+    --output_dir ./checkpoints/exp4_dtr \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+python eval_benchmarks.py --checkpoint ./checkpoints/exp4_dtr/epoch_3
 
 # Explicit Modality-Aware Router (Ours)
-python train_sft_real.py --router_type explicit --output_dir ./checkpoints/exp4_explicit
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.05 \
+    --router_type explicit \
+    --output_dir ./checkpoints/exp4_explicit \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+python eval_benchmarks.py --checkpoint ./checkpoints/exp4_explicit/epoch_3
 
 # Evaluate TextVQA & POPE
 python eval_benchmarks.py --checkpoint ./checkpoints/exp4_explicit --benchmark textvqa pope
