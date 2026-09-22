@@ -181,8 +181,6 @@ python train_sft_real.py \
 
 python eval_benchmarks.py --checkpoint ./checkpoints/exp4_explicit/epoch_3
 
-# Evaluate TextVQA & POPE
-python eval_benchmarks.py --checkpoint ./checkpoints/exp4_explicit --benchmark textvqa pope
 ```
 
 ### Experiment 5: Evolution Momentum ($\beta$) Robustness Test
