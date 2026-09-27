@@ -135,10 +135,66 @@ python eval_exp2_scaling.py \
 Sweeps over penalty weights $\lambda \in \{0, 0.01, 0.05, 0.1, 0.5\}$ to isolate the structural diversity vs. cooperative reasoning trade-off.
 
 ```bash
-for lambda_val in 0.0 0.01 0.05 0.1 0.5; do
-    python train_sft_real.py --lambda_ortho $lambda_val --output_dir ./checkpoints/sweep_lambda_$lambda_val
-    python eval_benchmarks.py --checkpoint ./checkpoints/sweep_lambda_$lambda_val --benchmark gqa
-done
+# 训练
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.00 \
+    --output_dir ./checkpoints/sweep_lambda_0.0 \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+# 评测
+python eval_benchmarks.py --checkpoint ./checkpoints/sweep_lambda_0.0/epoch_3
+
+# 训练
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.01 \
+    --output_dir ./checkpoints/sweep_lambda_0.01 \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+# 评测
+python eval_benchmarks.py --checkpoint ./checkpoints/sweep_lambda_0.01/epoch_3
+
+# 训练
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.05 \
+    --output_dir ./checkpoints/sweep_lambda_0.05 \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+# 评测
+python eval_benchmarks.py --checkpoint ./checkpoints/sweep_lambda_0.05/epoch_3
+
+# 训练
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.10 \
+    --output_dir ./checkpoints/sweep_lambda_0.1 \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+# 评测
+python eval_benchmarks.py --checkpoint ./checkpoints/sweep_lambda_0.1/epoch_3
+
+# 训练
+python train_sft_real.py \
+    --json_path ./data/llava_instruct_exp1.json \
+    --lambda_ortho 0.50 \
+    --output_dir ./checkpoints/sweep_lambda_0.5 \
+    --epochs 3 \
+    --batch_size 1 \
+    --grad_accum_steps 8
+
+# 评测
+python eval_benchmarks.py --checkpoint ./checkpoints/sweep_lambda_0.5/epoch_3
+
 ```
 
 ### Experiment 4: Router Architecture Ablation
