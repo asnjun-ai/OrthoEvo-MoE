@@ -31,7 +31,7 @@ def evaluate(model_id, checkpoint_path):
 
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        torch_dtype=torch.float16,
+        dtype=torch.float16,
         device_map={"": 0},
         trust_remote_code=True,
         local_files_only=os.path.exists(model_id) or "cache" in model_id,

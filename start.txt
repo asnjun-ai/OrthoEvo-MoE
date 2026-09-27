@@ -1,0 +1,5 @@
+conda activate ortho_evomoe
+cd /mnt/z/work/SCI
+code .
+
+python train_mllm_lora.py
