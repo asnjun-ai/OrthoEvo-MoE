@@ -184,12 +184,34 @@ python eval_benchmarks.py --checkpoint ./checkpoints/exp4_explicit/epoch_3
 ```
 
 ### Experiment 5: Evolution Momentum ($\beta$) Robustness Test
-Evaluates the stability of evolved experts under Conservative $[0.9, 0.99]$, Moderate $[0.7, 0.89]$, and Aggressive $[0.5, 0.69]$ update regimes.
 
 ```bash
-python train_sft_real.py --beta_regime conservative --output_dir ./checkpoints/exp5_beta_cons
-python train_sft_real.py --beta_regime moderate     --output_dir ./checkpoints/exp5_beta_mod
-python train_sft_real.py --beta_regime aggressive   --output_dir ./checkpoints/exp5_beta_agg
+python train_sft_real.py \
+    --momentum_beta 0.95 \
+    --lambda_ortho 0.05 \
+    --output_dir ./checkpoints/exp5_beta_0.95 \
+    --epochs 3
+
+python eval_benchmarks.py \
+    --checkpoint ./checkpoints/exp5_beta_0.95/epoch_3
+
+python train_sft_real.py \
+    --momentum_beta 0.80 \
+    --lambda_ortho 0.05 \
+    --output_dir ./checkpoints/exp5_beta_0.80 \
+    --epochs 3
+
+python eval_benchmarks.py \
+    --checkpoint ./checkpoints/exp5_beta_0.80/epoch_3
+
+python train_sft_real.py \
+    --momentum_beta 0.60 \
+    --lambda_ortho 0.05 \
+    --output_dir ./checkpoints/exp5_beta_0.60 \
+    --epochs 3
+
+python eval_benchmarks.py \
+    --checkpoint ./checkpoints/exp5_beta_0.60/epoch_3
 ```
 
 ---
